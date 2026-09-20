@@ -37,7 +37,7 @@ test before it becomes a patch.
 
 ### 🟢 Open source
 
-**Merged** — 29 pull requests in [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Amerged), all in Vapor mode:
+**Merged** — <!--m:count-->29<!--/m:count--> pull requests in [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Amerged), all in Vapor mode:
 
 | Area | What I fixed | PRs |
 |---|---|---|
@@ -48,15 +48,19 @@ test before it becomes a patch.
 | `compiler-vapor` — expressions | Repeated expressions were replaced by text match instead of AST range; optional-chain prefixes and member expressions with unsupported keys were cached unsafely | [#15538](https://github.com/vuejs/core/pull/15538), [#15530](https://github.com/vuejs/core/pull/15530), [#15540](https://github.com/vuejs/core/pull/15540) |
 | `compiler-vapor` — output parity | Raw values lost on `v-model`; number literals lost on slot outlet props; the leading newline of `<pre>` / `<textarea>` dropped; `key` wrongly honoured on `<template>` branches; static attribute values and comments decoded twice | [#15553](https://github.com/vuejs/core/pull/15553), [#15539](https://github.com/vuejs/core/pull/15539), [#15543](https://github.com/vuejs/core/pull/15543), [#15514](https://github.com/vuejs/core/pull/15514), [#15509](https://github.com/vuejs/core/pull/15509), [#15563](https://github.com/vuejs/core/pull/15563) |
 
+<!--m:unlisted-->
 <sub>Also merged: [#15552](https://github.com/vuejs/core/pull/15552), [#15550](https://github.com/vuejs/core/pull/15550), [#15522](https://github.com/vuejs/core/pull/15522), [#15520](https://github.com/vuejs/core/pull/15520), [#15511](https://github.com/vuejs/core/pull/15511), [#15510](https://github.com/vuejs/core/pull/15510), [#15506](https://github.com/vuejs/core/pull/15506), [#15497](https://github.com/vuejs/core/pull/15497) in `vuejs/core`, plus [typescript-eslint#12697](https://github.com/typescript-eslint/typescript-eslint/pull/12697) and [eslint-plugin-vue#3116](https://github.com/vuejs/eslint-plugin-vue/pull/3116).</sub>
+<!--/m:unlisted-->
 
+<!--m:inreview-->
 **In review** — open pull requests in
-[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen),
-[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen),
-[vueuse](https://github.com/vueuse/vueuse/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen),
-[vite](https://github.com/vitejs/vite/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) and
-[element-plus](https://github.com/element-plus/element-plus/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen),
+[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (11),
+[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (6),
+[element-plus](https://github.com/element-plus/element-plus/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
+[vite](https://github.com/vitejs/vite/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3) and
+[vueuse](https://github.com/vueuse/vueuse/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (2),
 including three new `eslint-plugin-vue` rules.
+<!--/m:inreview-->
 
 ---
 
@@ -68,7 +72,7 @@ including three new `eslint-plugin-vue` rules.
 | [**news-poster**](https://github.com/ValentinYoushkevich/news-poster) | News pipeline for Telegram channels: RSS collection, embedding-based deduplication, local bucket classification, LLM rewrite and translation, preview and publishing from a Vue 3 admin panel. | TypeScript · Express · Prisma/PostgreSQL · Vue 3 · Ollama · OpenRouter · n8n · Docker |
 | [**palisad**](https://github.com/ValentinYoushkevich/palisad) | Offline-first PWA for plant nurseries: a QR-tagged plant registry, field operations log, movements and printable PDF labels — the whole workflow runs with no connection and reconciles when one returns. | Vue 3 · Dexie/IndexedDB · Workbox · Express 5 · PostgreSQL · Knex · pdfkit |
 | [**cleverlog**](https://github.com/ValentinYoushkevich/cleverlog) | Employee time-tracking system — per-project logging, roles, and validation rules, built from a written spec. | JavaScript · Node.js · Vue |
-| [**patientDataCollector**](https://github.com/ValentinYoushkevich/patientDataCollector) | Referral data collector: a guided flow that captures the patient and provider fields a referral needs and validates them before submission. | TypeScript · HTML |
+| [**patientDataCollector**](https://github.com/ValentinYoushkevich/patientDataCollector) | Chrome/Edge extension (Manifest V3) that collects patient referral fields straight from EMR pages, lets the missing ones be filled in by hand, attaches saved provider data and posts the result as JSON to a configured endpoint. | JavaScript · Vue · Manifest V3 |
 
 ---
 
