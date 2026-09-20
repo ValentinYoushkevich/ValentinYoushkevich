@@ -14,7 +14,7 @@ places where a Vapor component and its VDOM equivalent disagree, and closing the
 name: "Valentin Youshkevich"
 handle: ValentinYoushkevich
 focus:
-  - "Full-stack TypeScript — Node.js, Express, Prisma / PostgreSQL"
+  - "Full-stack TypeScript — Node.js, Fastify, Express, Prisma / PostgreSQL"
   - "Vue 3 · Vite · Tailwind on the client"
   - "AI integrations — LLM pipelines, embeddings, local and hosted models"
 open_source: "Vue ecosystem — core (Vapor mode), eslint-plugin-vue, vueuse, vite, element-plus"
@@ -82,6 +82,7 @@ including three new `eslint-plugin-vue` rules.
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+<img src="https://img.shields.io/badge/Fastify-202020?style=for-the-badge&logo=fastify&logoColor=white" alt="Fastify"/>
 <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
 <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma"/>
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
