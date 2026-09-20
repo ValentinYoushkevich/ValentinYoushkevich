@@ -1,19 +1,23 @@
-<img src="https://raw.githubusercontent.com/ValentinYoushkevich/ValentinYoushkevich/main/assets/banner.svg?v=1" width="100%" alt="Valentin Youshkevich — front-end engineer, Vue 3 internals, Vapor mode, TypeScript"/>
+<img src="https://raw.githubusercontent.com/ValentinYoushkevich/ValentinYoushkevich/main/assets/banner.svg?v=2" width="100%" alt="Valentin Youshkevich — full-stack developer and AI integrator, TypeScript"/>
 
 ### Hi, I'm Valentin 👋
 
-Front-end engineer working mostly in **TypeScript and Vue 3** — these days inside the framework
-itself. Most of my open-source time goes into **Vapor mode** in `vuejs/core`: finding the places
-where a Vapor component and its VDOM equivalent disagree, and closing the gap.
+Full-stack developer and **AI integrator**, working mostly in **TypeScript** — Node.js services and
+APIs on the back end, Vue 3 on the front, and LLM pipelines wired into products rather than bolted
+on afterwards: embeddings and deduplication, classification, rewriting and translation, with the
+orchestration and the guardrails around them.
+
+My open-source time goes somewhere much narrower: **Vapor mode** in `vuejs/core` — finding the
+places where a Vapor component and its VDOM equivalent disagree, and closing the gap.
 
 ```yaml
 name: "Valentin Youshkevich"
 handle: ValentinYoushkevich
 focus:
-  - "Vue 3 internals — compiler-vapor, runtime-vapor, SSR hydration"
-  - "TypeScript · Vite · Node.js"
-  - "Linting and DX tooling for Vue codebases"
-open_source: "Vue ecosystem — core, eslint-plugin-vue, vueuse, vite, element-plus"
+  - "Full-stack TypeScript — Node.js, Express, Prisma / PostgreSQL"
+  - "Vue 3 · Vite on the front end"
+  - "AI integrations — LLM pipelines, embeddings, local and hosted models"
+open_source: "Vue ecosystem — core (Vapor mode), eslint-plugin-vue, vueuse, vite, element-plus"
 house_rules:
   - "A failing test before the fix, always"
   - "Smallest sufficient change — no drive-by cleanup"
@@ -60,7 +64,7 @@ including four new `eslint-plugin-vue` rules.
 
 | Project | What it is | Stack |
 |---|---|---|
-| [**news-poster**](https://github.com/ValentinYoushkevich/news-poster) | News pipeline for Telegram channels: RSS collection, embedding-based deduplication, local bucket classification, LLM rewrite and translation, preview and publishing from a Vue 3 admin panel. | TypeScript · Express · Prisma/PostgreSQL · Vue 3 · Ollama · n8n · Docker |
+| [**news-poster**](https://github.com/ValentinYoushkevich/news-poster) | News pipeline for Telegram channels: RSS collection, embedding-based deduplication, local bucket classification, LLM rewrite and translation, preview and publishing from a Vue 3 admin panel. | TypeScript · Express · Prisma/PostgreSQL · Vue 3 · Ollama · OpenRouter · n8n · Docker |
 | [**cleverlog**](https://github.com/ValentinYoushkevich/cleverlog) | Employee time-tracking system — per-project logging, roles, and validation rules, built from a written spec. | JavaScript · Node.js · Vue |
 | [**patientDataCollector**](https://github.com/ValentinYoushkevich/patientDataCollector) | Referral data collector: a guided flow that captures the patient and provider fields a referral needs and validates them before submission. | TypeScript · HTML |
 
@@ -71,16 +75,18 @@ including four new `eslint-plugin-vue` rules.
 <p>
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/Vue.js-41B883?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue.js"/>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
-<img src="https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white" alt="Vitest"/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
 <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
 <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma"/>
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-<img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint"/>
-<img src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+<img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama"/>
+<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+<img src="https://img.shields.io/badge/Vue.js-41B883?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue.js"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+<img src="https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white" alt="Vitest"/>
+<img src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+<img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint"/>
 </p>
 
 ---
