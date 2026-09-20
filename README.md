@@ -15,7 +15,7 @@ name: "Valentin Youshkevich"
 handle: ValentinYoushkevich
 focus:
   - "Full-stack TypeScript — Node.js, Express, Prisma / PostgreSQL"
-  - "Vue 3 · Vite on the front end"
+  - "Vue 3 · Vite · Tailwind on the client"
   - "AI integrations — LLM pipelines, embeddings, local and hosted models"
 open_source: "Vue ecosystem — core (Vapor mode), eslint-plugin-vue, vueuse, vite, element-plus"
 house_rules:
