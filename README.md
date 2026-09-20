@@ -64,6 +64,7 @@ including four new `eslint-plugin-vue` rules.
 
 | Project | What it is | Stack |
 |---|---|---|
+| [**clever-vibe**](https://github.com/ValentinYoushkevich/clever-vibe) | Tracks where AI assistants actually help in development: each use is logged in 20–30 seconds against a catalogue of ~41 approaches, scored for usefulness and trust, and rolled up into frequency × usefulness quadrants, stage coverage and per-approach spread — with averages muted below N = 5. | TypeScript · Fastify · Prisma/PostgreSQL · Vue 3 · PrimeVue · Vitest · Docker |
 | [**news-poster**](https://github.com/ValentinYoushkevich/news-poster) | News pipeline for Telegram channels: RSS collection, embedding-based deduplication, local bucket classification, LLM rewrite and translation, preview and publishing from a Vue 3 admin panel. | TypeScript · Express · Prisma/PostgreSQL · Vue 3 · Ollama · OpenRouter · n8n · Docker |
 | [**cleverlog**](https://github.com/ValentinYoushkevich/cleverlog) | Employee time-tracking system — per-project logging, roles, and validation rules, built from a written spec. | JavaScript · Node.js · Vue |
 | [**patientDataCollector**](https://github.com/ValentinYoushkevich/patientDataCollector) | Referral data collector: a guided flow that captures the patient and provider fields a referral needs and validates them before submission. | TypeScript · HTML |
