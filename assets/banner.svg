@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 180" width="854" height="180" role="img" aria-label="Valentin Youshkevich — Vue 3 internals, Vapor mode, TypeScript">
-  <title>Valentin Youshkevich — Vue 3 internals · Vapor mode · TypeScript</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 854 180" width="854" height="180" role="img" aria-label="Valentin Youshkevich — full-stack developer and AI integrator, TypeScript">
+  <title>Valentin Youshkevich — Full-stack developer · AI integrator · TypeScript</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d1117"/>
@@ -31,8 +31,8 @@
     <!-- name block -->
     <text x="44" y="79" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="31" font-weight="700" fill="#e6edf3" letter-spacing="-0.3">Valentin Youshkevich</text>
     <rect x="44" y="95" width="124" height="3" rx="1.5" fill="url(#rule)"/>
-    <text x="44" y="123" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" fill="#9aa7b4">Front-end engineer · Vue 3 internals · TypeScript</text>
-    <text x="44" y="146" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#5f6e7d">finding where Vapor and VDOM disagree — and closing the gap</text>
+    <text x="44" y="123" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" fill="#9aa7b4">Full-stack developer · AI integrator · TypeScript</text>
+    <text x="44" y="146" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" fill="#5f6e7d">open source: finding where Vapor and VDOM disagree</text>
 
     <!-- parity diagram -->
     <g font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif">
