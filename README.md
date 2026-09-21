@@ -37,7 +37,7 @@ test before it becomes a patch.
 
 ### 🟢 Open source
 
-**Merged** — <!--m:count-->29<!--/m:count--> pull requests in [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Amerged), all in Vapor mode:
+**Merged** — <!--m:count-->31<!--/m:count--> pull requests in [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Amerged), all in Vapor mode:
 
 | Area | What I fixed | PRs |
 |---|---|---|
@@ -49,13 +49,13 @@ test before it becomes a patch.
 | `compiler-vapor` — output parity | Raw values lost on `v-model`; number literals lost on slot outlet props; the leading newline of `<pre>` / `<textarea>` dropped; `key` wrongly honoured on `<template>` branches; static attribute values and comments decoded twice | [#15553](https://github.com/vuejs/core/pull/15553), [#15539](https://github.com/vuejs/core/pull/15539), [#15543](https://github.com/vuejs/core/pull/15543), [#15514](https://github.com/vuejs/core/pull/15514), [#15509](https://github.com/vuejs/core/pull/15509), [#15563](https://github.com/vuejs/core/pull/15563) |
 
 <!--m:unlisted-->
-<sub>Also merged: [#15552](https://github.com/vuejs/core/pull/15552), [#15550](https://github.com/vuejs/core/pull/15550), [#15522](https://github.com/vuejs/core/pull/15522), [#15520](https://github.com/vuejs/core/pull/15520), [#15511](https://github.com/vuejs/core/pull/15511), [#15510](https://github.com/vuejs/core/pull/15510), [#15506](https://github.com/vuejs/core/pull/15506), [#15497](https://github.com/vuejs/core/pull/15497) in `vuejs/core`, plus [typescript-eslint#12697](https://github.com/typescript-eslint/typescript-eslint/pull/12697) and [eslint-plugin-vue#3116](https://github.com/vuejs/eslint-plugin-vue/pull/3116).</sub>
+<sub>Also merged: [#15575](https://github.com/vuejs/core/pull/15575), [#15574](https://github.com/vuejs/core/pull/15574), [#15552](https://github.com/vuejs/core/pull/15552), [#15550](https://github.com/vuejs/core/pull/15550), [#15522](https://github.com/vuejs/core/pull/15522), [#15520](https://github.com/vuejs/core/pull/15520), [#15511](https://github.com/vuejs/core/pull/15511), [#15510](https://github.com/vuejs/core/pull/15510), [#15506](https://github.com/vuejs/core/pull/15506), [#15497](https://github.com/vuejs/core/pull/15497) in `vuejs/core`, plus [typescript-eslint#12697](https://github.com/typescript-eslint/typescript-eslint/pull/12697) and [eslint-plugin-vue#3116](https://github.com/vuejs/eslint-plugin-vue/pull/3116).</sub>
 <!--/m:unlisted-->
 
 <!--m:inreview-->
 **In review** — open pull requests in
 [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (11),
-[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (6),
+[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (8),
 [element-plus](https://github.com/element-plus/element-plus/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
 [vite](https://github.com/vitejs/vite/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3) and
 [vueuse](https://github.com/vueuse/vueuse/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (2),
