@@ -54,9 +54,9 @@ test before it becomes a patch.
 
 <!--m:inreview-->
 **In review** — open pull requests in
-[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (15),
+[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (17),
+[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (6),
 [element-plus](https://github.com/element-plus/element-plus/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
-[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
 [vite](https://github.com/vitejs/vite/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
 [language-tools](https://github.com/vuejs/language-tools/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (2) and
 [vueuse](https://github.com/vueuse/vueuse/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (2),
