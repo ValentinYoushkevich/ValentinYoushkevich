@@ -83,6 +83,29 @@ let readme = readFileSync(README, 'utf8')
 // --- merged count -----------------------------------------------------------
 readme = region(readme, 'count', String(mergedCore.length))
 
+// --- merged totals across upstream projects ---------------------------------
+const mergedByRepo = new Map()
+for (const item of mergedAll) {
+  const repo = repoOf(item)
+  if (repo.startsWith(`${USER}/`)) continue
+  if (repo !== CORE && (await stars(repo)) < MIN_STARS) continue
+  mergedByRepo.set(repo, (mergedByRepo.get(repo) ?? 0) + 1)
+}
+const mergedRanked = [...mergedByRepo.entries()].sort(
+  (a, b) => b[1] - a[1] || a[0].localeCompare(b[0]),
+)
+const mergedTotal = mergedRanked.reduce((sum, [, n]) => sum + n, 0)
+const perRepo = mergedRanked
+  .map(([repo, n]) => `${n} in \`${label(repo)}\``)
+  .join(' · ')
+
+readme = region(readme, 'total', String(mergedTotal))
+readme = region(
+  readme,
+  'summary',
+  `\n**Merged** — ${mergedTotal} PRs: ${perRepo}\n`,
+)
+
 // --- merged PRs not yet placed in the curated table -------------------------
 const curated = readme.replace(
   /<!--m:unlisted-->[\s\S]*?<!--\/m:unlisted-->/,
@@ -159,6 +182,7 @@ readme = region(readme, 'inreview', inReview)
 writeFileSync(README, readme)
 
 console.log(`merged in ${CORE}: ${mergedCore.length}`)
+console.log(`merged upstream total: ${mergedTotal} (${perRepo})`)
 console.log(`unlisted: ${unlisted.length ? unlisted.join(', ') : 'none'}`)
 console.log(`upstream merged: ${upstream.length}`)
 console.log(`open: ${open.length} across ${ranked.length} repos, ${newRules} new rules`)

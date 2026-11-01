@@ -7,8 +7,9 @@ APIs on the back end, Vue 3 on the front, and LLM pipelines wired into products 
 on afterwards: embeddings and deduplication, classification, rewriting and translation, with the
 orchestration and the guardrails around them.
 
-My open-source time goes somewhere much narrower: **Vapor mode** in `vuejs/core` — finding the
-places where a Vapor component and its VDOM equivalent disagree, and closing the gap.
+In open source I work across the Vue toolchain, layer by layer — the renderer (`vuejs/core`,
+mostly **Vapor mode**), the linter (`eslint-plugin-vue`), the type tooling (`language-tools`) and
+the test layer (`test-utils`). <!--m:total-->176<!--/m:total--> merged PRs so far.
 
 ```yaml
 name: "Valentin Youshkevich"
@@ -17,7 +18,7 @@ focus:
   - "Full-stack TypeScript — Node.js, Fastify, Express, Prisma / PostgreSQL"
   - "Vue 3 · Vite · Tailwind on the client"
   - "AI integrations — LLM pipelines, embeddings, local and hosted models"
-open_source: "Vue ecosystem — core (Vapor mode), eslint-plugin-vue, vueuse, vite, element-plus"
+open_source: "Vue ecosystem — core (Vapor mode), eslint-plugin-vue, test-utils, language-tools"
 house_rules:
   - "A failing test before the fix, always"
   - "Smallest sufficient change — no drive-by cleanup"
@@ -37,7 +38,11 @@ test before it becomes a patch.
 
 ### 🟢 Open source
 
-**Merged** — <!--m:count-->103<!--/m:count--> pull requests in [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Amerged), all in Vapor mode:
+<!--m:summary-->
+**Merged** — 176 PRs: 103 in `vuejs/core` · 60 in `eslint-plugin-vue` · 9 in `test-utils` · 3 in `language-tools` · 1 in `typescript-eslint`
+<!--/m:summary-->
+
+In [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Amerged) — <!--m:count-->103<!--/m:count--> pull requests, mostly in Vapor mode:
 
 | Area | What I fixed | PRs |
 |---|---|---|
