@@ -29,10 +29,11 @@ house_rules:
 
 ### 🔬 How I find these bugs
 
-Vapor mode is meant to be behaviourally identical to the VDOM renderer. I run the same component
-tree through both renderers and diff the result — DOM shape, prop values, hook order, hydration
-mismatches. Where the two disagree, one of them is wrong, and that disagreement becomes a failing
-test before it becomes a patch.
+I don't wait for bug reports. I collected ~700k real-world Vue components from npm and run them
+through the tool under test — the compiler, the Vapor renderer, the linter, the test utils — against
+an oracle that says what *should* happen: the VDOM renderer for Vapor, plain `createApp` for
+test-utils. Disagreements are clustered by root cause, and each cluster becomes a failing test
+before it becomes a patch.
 
 ---
 
