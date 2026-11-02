@@ -60,8 +60,8 @@ In [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValenti
 
 <!--m:inreview-->
 **In review** — open pull requests in
-[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (11),
-[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (8),
+[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (13),
+[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (12),
 [element-plus](https://github.com/element-plus/element-plus/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
 [vite](https://github.com/vitejs/vite/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
 [test-utils](https://github.com/vuejs/test-utils/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
