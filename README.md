@@ -60,14 +60,16 @@ In [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValenti
 
 <!--m:inreview-->
 **In review** — open pull requests in
-[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (12),
+[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (15),
 [vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (8),
 [element-plus](https://github.com/element-plus/element-plus/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
 [vite](https://github.com/vitejs/vite/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
 [language-tools](https://github.com/vuejs/language-tools/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
-[vueuse](https://github.com/vueuse/vueuse/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (2) and
+[vueuse](https://github.com/vueuse/vueuse/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (2),
 [eslint](https://github.com/eslint/eslint/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (1),
-including two new `eslint-plugin-vue` rules.
+[docs](https://github.com/vuejs/docs/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (1) and
+[vue-eslint-parser](https://github.com/vuejs/vue-eslint-parser/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (1),
+including three new `eslint-plugin-vue` rules.
 <!--/m:inreview-->
 
 ---
