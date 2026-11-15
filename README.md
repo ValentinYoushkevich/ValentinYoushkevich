@@ -60,13 +60,13 @@ In [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValenti
 
 <!--m:inreview-->
 **In review** — open pull requests in
-[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (15),
-[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (13),
+[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (18),
+[vuejs/core](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (15),
 [element-plus](https://github.com/element-plus/element-plus/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
 [eslint](https://github.com/eslint/eslint/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
+[test-utils](https://github.com/vuejs/test-utils/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (4),
 [vite](https://github.com/vitejs/vite/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
 [language-tools](https://github.com/vuejs/language-tools/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
-[test-utils](https://github.com/vuejs/test-utils/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
 [vue-eslint-parser](https://github.com/vuejs/vue-eslint-parser/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (3),
 [fastify](https://github.com/fastify/fastify/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (2),
 [devtools](https://github.com/vuejs/devtools/pulls?q=is%3Apr+author%3AValentinYoushkevich+is%3Aopen) (2),
