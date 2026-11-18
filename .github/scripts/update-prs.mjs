@@ -1,9 +1,9 @@
 // Refreshes the generated regions of README.md from the GitHub API.
 //
 // The curated table of merged PRs stays hand-written — only the facts that go
-// stale are regenerated: the merged count, the list of merged PRs not yet
-// placed in that table, and the open-PR summary. Move a PR into the table by
-// hand and the next run drops it from the "Also merged" line automatically.
+// stale are regenerated: the merged counts and the list of merged PRs not yet
+// placed in that table, folded under <details>. Move a PR into the table by
+// hand and the next run drops it from the folded list automatically.
 
 import { readFileSync, writeFileSync } from 'node:fs'
 
@@ -53,15 +53,6 @@ async function stars(repo) {
 const label = repo => (repo === CORE ? CORE : repo.split('/')[1])
 const prLink = (repo, n, text) =>
   `[${text}](https://github.com/${repo}/pull/${n})`
-const listUrl = (repo, state) =>
-  `https://github.com/${repo}/pulls?q=` +
-  encodeURIComponent(`is:pr author:${USER} is:${state}`).replace(/%20/g, '+')
-
-const WORDS = [
-  'no', 'one', 'two', 'three', 'four', 'five',
-  'six', 'seven', 'eight', 'nine', 'ten',
-]
-const word = n => WORDS[n] ?? String(n)
 
 function join(parts) {
   if (parts.length <= 1) return parts.join('')
@@ -76,7 +67,6 @@ function region(src, name, body) {
 
 const mergedCore = await search(`type:pr author:${USER} is:merged repo:${CORE}`)
 const mergedAll = await search(`type:pr author:${USER} is:merged`)
-const open = await search(`type:pr author:${USER} is:open`)
 
 let readme = readFileSync(README, 'utf8')
 
@@ -131,10 +121,10 @@ for (const item of mergedAll) {
 const sentences = []
 if (unlisted.length) {
   const links = unlisted.map(n => prLink(CORE, n, `#${n}`)).join(', ')
-  sentences.push(`Also merged: ${links} in \`${CORE}\``)
+  sentences.push(`${links} in \`${CORE}\``)
 }
 if (upstream.length) {
-  const lead = sentences.length ? ', plus ' : 'Also merged: '
+  const lead = sentences.length ? ', plus ' : ''
   sentences.push(`${lead}${join(upstream)}`)
 }
 readme = region(
@@ -143,46 +133,9 @@ readme = region(
   sentences.length ? `\n<sub>${sentences.join('')}.</sub>\n` : '\n',
 )
 
-// --- open pull requests -----------------------------------------------------
-const byRepo = new Map()
-for (const item of open) {
-  const repo = repoOf(item)
-  if (repo.startsWith(`${USER}/`)) continue
-  if (!byRepo.has(repo)) byRepo.set(repo, [])
-  byRepo.get(repo).push(item)
-}
-
-const ranked = [...byRepo.entries()].sort(
-  (a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]),
-)
-const links = ranked.map(
-  ([repo, items]) => `[${label(repo)}](${listUrl(repo, 'open')}) (${items.length})`,
-)
-const listText =
-  links.length > 1
-    ? `${links.slice(0, -1).join(',\n')} and\n${links.at(-1)}`
-    : links.join('')
-
-// New lint rules are titled `feat: add \`vue/some-rule\` rule` — options on an
-// existing rule are not rules, and must not be counted as such.
-const newRules = (byRepo.get('vuejs/eslint-plugin-vue') ?? []).filter(i =>
-  /add\s+`[\w/-]+`\s+rule/i.test(i.title),
-).length
-
-let inReview = ''
-if (ranked.length) {
-  const noun = newRules === 1 ? 'rule' : 'rules'
-  const tail = newRules
-    ? `,\nincluding ${word(newRules)} new \`eslint-plugin-vue\` ${noun}.`
-    : '.'
-  inReview = `\n**In review** — open pull requests in\n${listText}${tail}\n`
-}
-readme = region(readme, 'inreview', inReview)
-
 writeFileSync(README, readme)
 
 console.log(`merged in ${CORE}: ${mergedCore.length}`)
 console.log(`merged upstream total: ${mergedTotal} (${perRepo})`)
 console.log(`unlisted: ${unlisted.length ? unlisted.join(', ') : 'none'}`)
 console.log(`upstream merged: ${upstream.length}`)
-console.log(`open: ${open.length} across ${ranked.length} repos, ${newRules} new rules`)
