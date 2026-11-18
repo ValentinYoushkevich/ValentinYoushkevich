@@ -10,6 +10,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 const USER = 'ValentinYoushkevich'
 const CORE = 'vuejs/core'
 const README = 'README.md'
+const BANNER = 'assets/banner.svg'
 // Only upstream projects of this size are worth naming outside vuejs/core.
 const MIN_STARS = 1000
 
@@ -61,7 +62,7 @@ function join(parts) {
 
 function region(src, name, body) {
   const re = new RegExp(`(<!--m:${name}-->)[\\s\\S]*?(<!--/m:${name}-->)`)
-  if (!re.test(src)) throw new Error(`marker m:${name} missing from ${README}`)
+  if (!re.test(src)) throw new Error(`marker m:${name} missing`)
   return src.replace(re, `$1${body}$2`)
 }
 
@@ -94,6 +95,38 @@ readme = region(
   readme,
   'summary',
   `\n**Merged** — ${mergedTotal} PRs: ${perRepo}\n`,
+)
+
+// --- banner: merged PRs per layer of the Vue toolchain ----------------------
+const LAYERS = [
+  ['RENDERER', 'vuejs/core'],
+  ['LINTER', 'vuejs/eslint-plugin-vue'],
+  ['TESTS', 'vuejs/test-utils'],
+  ['TYPES', 'vuejs/language-tools'],
+]
+const FONT = `'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif`
+const counts = LAYERS.map(([, repo]) => mergedByRepo.get(repo) ?? 0)
+const most = Math.max(1, ...counts)
+const BAR_X = 584
+const BAR_W = 130
+const bars = LAYERS.map(([layer, repo], i) => {
+  const n = counts[i]
+  const y = 42 + i * 31
+  const w = Math.max(6, (BAR_W * n) / most)
+  const inside = w >= 100
+  const nx = inside ? BAR_X + w - 6 : BAR_X + w + 8
+  return [
+    `      <text x="${BAR_X - 12}" y="${y + 11}" font-size="10" fill="#6e7d8c" letter-spacing="1.6" text-anchor="end">${layer}</text>`,
+    `      <rect x="${BAR_X}" y="${y}" width="${BAR_W}" height="15" rx="3" fill="#41b883" fill-opacity="0.08"/>`,
+    `      <rect x="${BAR_X}" y="${y}" width="${w.toFixed(1)}" height="15" rx="3" fill="#41b883" fill-opacity="${(0.9 - i * 0.15).toFixed(2)}"/>`,
+    `      <text x="${nx.toFixed(1)}" y="${y + 11.5}" font-size="10.5" font-weight="700" fill="${inside ? '#0d1117' : '#e6edf3'}" text-anchor="${inside ? 'end' : 'start'}">${n}</text>`,
+    `      <text x="${BAR_X + BAR_W + 10}" y="${y + 11.5}" font-size="10.5" fill="#9aa7b4">${label(repo)}</text>`,
+  ].join('\n')
+})
+const banner = readFileSync(BANNER, 'utf8')
+writeFileSync(
+  BANNER,
+  region(banner, 'layers', `\n    <g font-family="${FONT}">\n${bars.join('\n')}\n    </g>\n    `),
 )
 
 // --- merged PRs not yet placed in the curated table -------------------------

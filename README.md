@@ -1,8 +1,6 @@
-<img src="https://raw.githubusercontent.com/ValentinYoushkevich/ValentinYoushkevich/main/assets/banner.svg?v=5" width="100%" alt="Valentin Youshkevich — full-stack developer and AI integrator, TypeScript"/>
+<img src="https://raw.githubusercontent.com/ValentinYoushkevich/ValentinYoushkevich/main/assets/banner.svg?v=6" width="100%" alt="Valentin Youshkevich — full-stack developer and AI integrator, TypeScript"/>
 
 ### Hi, I'm Valentin 👋
-
-![Profile views](https://komarev.com/ghpvc/?username=ValentinYoushkevich&label=Profile%20views&color=41b883&style=flat)
 
 Full-stack developer and **AI integrator**, working mostly in **TypeScript** — Node.js services and
 APIs on the back end, Vue 3 on the front, and LLM pipelines wired into products rather than bolted
@@ -106,3 +104,5 @@ In [`vuejs/core`](https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValenti
 <a href="https://www.linkedin.com/in/valentin-yushkevich/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://github.com/vuejs/core/pulls?q=is%3Apr+author%3AValentinYoushkevich"><img src="https://img.shields.io/badge/My%20PRs%20in%20vuejs%2Fcore-41B883?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Pull requests in vuejs/core"/></a>
 </p>
+
+![Profile views](https://komarev.com/ghpvc/?username=ValentinYoushkevich&label=Profile%20views&color=41b883&style=flat)
