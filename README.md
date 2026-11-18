@@ -2,6 +2,8 @@
 
 ### Hi, I'm Valentin 👋
 
+![Profile views](https://komarev.com/ghpvc/?username=ValentinYoushkevich&label=Profile%20views&color=41b883&style=flat)
+
 Full-stack developer and **AI integrator**, working mostly in **TypeScript** — Node.js services and
 APIs on the back end, Vue 3 on the front, and LLM pipelines wired into products rather than bolted
 on afterwards: embeddings and deduplication, classification, rewriting and translation, with the
