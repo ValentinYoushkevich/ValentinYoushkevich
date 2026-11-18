@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/ValentinYoushkevich/ValentinYoushkevich/main/assets/banner.svg?v=6" width="100%" alt="Valentin Youshkevich — full-stack developer and AI integrator, TypeScript"/>
+<img src="https://raw.githubusercontent.com/ValentinYoushkevich/ValentinYoushkevich/main/assets/banner.svg?v=7" width="100%" alt="Valentin Youshkevich — full-stack developer and AI integrator, TypeScript"/>
 
 ### Hi, I'm Valentin 👋
 
